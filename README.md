@@ -35,8 +35,13 @@ This Node.js automation project uses [Playwright](https://playwright.dev/) to lo
 
 4. **Set up Playwright:**
    ```bash
-   npx playwright install
+   npm init playwright@latest
    ```
+Run the install command and select the following to get started:
+
+Choose between TypeScript or JavaScript (default is TypeScript)
+Name of your Tests folder (default is tests or e2e if you already have a tests folder in your project)
+Install Playwright browsers (default is true)
 
 5. **Create a `.env` file**: Copy the sample below into your `.env` file and replace with your actual values.
 
@@ -52,6 +57,11 @@ This Node.js automation project uses [Playwright](https://playwright.dev/) to lo
    ```bash
    npx playwright test
    ```
+  or 
+
+  ```bash
+   npx playwright test --project=chromium coordinates.tests.spec.js
+  ```
 
 2. **Output**:
    The script will:
